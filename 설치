@@ -27,3 +27,11 @@ yarn add react-router-dom
 jsconfig.json 
 
 yarn start
+
+
+--- 참조
+ES6 (ES5)
+JSX
+react
+material (https://material-ui.com/, https://material-ui.com/components/box/)
+mobx (기타)
