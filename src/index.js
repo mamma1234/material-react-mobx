@@ -30,6 +30,9 @@ import { Provider } from 'mobx-react';
 import store from './store';
 import * as serviceWorker from './serviceWorker';
 
+import Mobx from './pages/Mobx.js';
+import Home from './pages/Home.js';
+
 const hist = createBrowserHistory();
 
 ReactDOM.render(
@@ -37,7 +40,9 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/admin" component={Admin} />
-      <Route path="/rtl" component={RTL} />
+      {/* <Route path="/rtl" component={RTL} /> */}
+      <Route path="/mobx" component={Mobx} />
+      <Route path="/home" component={Home} />
       <Redirect from="/" to="/admin/dashboard" />
     </Switch>
   </Router>
