@@ -32,6 +32,7 @@ import * as serviceWorker from "./serviceWorker";
 
 import Mobx from "./pages/Mobx.js";
 import Home from "./pages/Home.js";
+import Django from "./pages/Django.js";
 
 const hist = createBrowserHistory();
 
@@ -43,6 +44,7 @@ ReactDOM.render(
         {/* <Route path="/rtl" component={RTL} /> */}
         <Route path="/mobx" component={Mobx} />
         <Route path="/home" component={Home} />
+        <Route path="/django" component={Django} />
         <Redirect from="/" to="/admin/dashboard" />
       </Switch>
     </Router>
