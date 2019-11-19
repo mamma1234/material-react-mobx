@@ -37,7 +37,30 @@ import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
 import RTLPage from "views/RTLPage/RTLPage.js";
 
 
+import iconDirectionsBoat from "@material-ui/icons/DirectionsBoat";
+import SchedulePage from "views/Schedule/Schedule.js";
+import MapTrackingPage from "views/MapTracking/MapTracking.js";
+import iconRouter from "@material-ui/icons/Router";
+
+
+
 const dashboardRoutes = [
+  {
+    path: "/schedule",
+    name: "Schedule",
+    rtlName: "لوحة القيادة",
+    icon: iconDirectionsBoat,
+    component: SchedulePage,
+    layout: "/admin"
+  },
+  {
+    path: "/maps-tracking",
+    name: "Ship Tracking",
+    rtlName: "لوحة القيادة",
+    icon: iconRouter,
+    component: MapTrackingPage,
+    layout: "/admin"
+  },
   {
     path: "/dashboard",
     name: "Dashboard",

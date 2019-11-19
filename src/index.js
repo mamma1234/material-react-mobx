@@ -26,26 +26,26 @@ import Admin from "layouts/Admin.js";
 
 import "assets/css/material-dashboard-react.css?v=1.8.0";
 
-import { Provider } from 'mobx-react';
-import store from './store';
-import * as serviceWorker from './serviceWorker';
+import { Provider } from "mobx-react";
+import store from "./store";
+import * as serviceWorker from "./serviceWorker";
 
-import Mobx from './pages/Mobx.js';
-import Home from './pages/Home.js';
+import Mobx from "./pages/Mobx.js";
+import Home from "./pages/Home.js";
 
 const hist = createBrowserHistory();
 
 ReactDOM.render(
   <Provider store={store}>
-  <Router history={hist}>
-    <Switch>
-      <Route path="/admin" component={Admin} />
-      {/* <Route path="/rtl" component={RTL} /> */}
-      <Route path="/mobx" component={Mobx} />
-      <Route path="/home" component={Home} />
-      <Redirect from="/" to="/admin/dashboard" />
-    </Switch>
-  </Router>
+    <Router history={hist}>
+      <Switch>
+        <Route path="/admin" component={Admin} />
+        {/* <Route path="/rtl" component={RTL} /> */}
+        <Route path="/mobx" component={Mobx} />
+        <Route path="/home" component={Home} />
+        <Redirect from="/" to="/admin/dashboard" />
+      </Switch>
+    </Router>
   </Provider>,
   document.getElementById("root")
 );

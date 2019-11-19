@@ -94,7 +94,6 @@ export default function Admin({ ...rest }) {
   }, [mainPanel]);
   return (
     <div className={classes.wrapper}>
-      <div>abcdef</div>
       <Sidebar
         routes={routes}
         logoText={"Creative Tim"}
